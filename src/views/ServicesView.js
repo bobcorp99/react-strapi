@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { getServices } from '../api'
 import { getProducts } from '../api'
 import { getProjects } from '../api'
-import { postFeedback } from '../api'
+// import { postFeedback } from '../api'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -33,11 +33,11 @@ export default () => {
 
   const [feedbacksList, setFeedbacks] = useState([])
 
-  useEffect(() => {
-    postFeedback().then(data4 => {
-      setFeedbacks(data4)
-    })
-  }, [])
+  // useEffect(() => {
+  //   postFeedback().then(data4 => {
+  //     setFeedbacks(data4)
+  //   })
+  // }, [])
 
   return (
     <div>
@@ -98,7 +98,7 @@ export default () => {
         </div>
       </div>
 
-      <section className='feedback'>
+      {/* <section className='feedback'>
         <div className="container">
           <div className="feedback__title">
             <h3>Обратная связь</h3>
@@ -110,18 +110,18 @@ export default () => {
                 <div className="feedback__right">
                   <div className="feedback__box">
                     <p className="feedback__text">Ф.И.О</p>
-                    <input className="feedback__contact" placeholder='Фамилия Имя Отчество' type='text'>{feedback.attributes.name}</input>
+                    <input className="feedback__contact" placeholder='Фамилия Имя Отчество' type='text'></input>
                   </div>
                   <div className="feedback__box">
                     <p className="feedback__text"></p>
-                    <input className="feedback__contact" placeholder='example@gmail.com' type='email'>{feedback.attributes.email}</input>
+                    <input className="feedback__contact" placeholder='example@gmail.com' type='email'></input>
                   </div>
                   <div className="feedback__box">
                     <p className="feedback__text"></p>
-                    <input className="feedback__contact" placeholder='+99898 765-43-21' type='tel'>{feedback.attributes.tel}</input>
+                    <input className="feedback__contact" placeholder='+99898 765-43-21' type='tel'></input>
                   </div>
                   <div className="feedback__box">
-                    <textarea name="contact" placeholder='Письмо' id="" cols="30" rows="10">{feedback.attributes.text}</textarea>
+                    <textarea name="contact" placeholder='Письмо' id="" cols="30" rows="10"></textarea>
                   </div>
                   <div className="feedback__button">
                     <a>Отправить</a>
@@ -131,7 +131,7 @@ export default () => {
             }
           </div>
         </div>
-      </section>
+      </section> */}
 
     </div>
   )
