@@ -1,0 +1,66 @@
+.projects {
+    background: #f3f6f9;
+    background-image: url('../logos/projects__bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: scroll;
+}
+
+.container__projects {
+    padding-bottom: 30px;
+}
+
+.projects__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.projects__content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: bas; */
+    width: 395px;
+    height: 195px;
+    background: #ffffff;
+    border-radius: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.projects__text {
+    padding: 30px 25px 25px 35px;
+}
+
+.projects__text span {
+    color: #00B050;
+    font-weight: 500;
+}
+
+.projects__span {
+    position: absolute;
+    bottom: 30px;
+    right: 23%;
+    transition: 0.25s;
+    font-weight: 500;
+    color: #142251
+}
+
+.feedback__button {
+    text-align: center;
+}
+
+.feedback__button a {
+    padding: 15px 50px;
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: #f3f6f9;
+}
+
+.feedback__button a:hover {
+    background-color: #142251;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.3s;
+}

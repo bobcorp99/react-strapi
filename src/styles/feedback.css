@@ -1,0 +1,88 @@
+.feedback {
+    background: #f3f6f9;
+}
+
+.feedback__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback__next {
+    border: none;
+    width: 75px;
+    height: 75px;
+    background: transparent url('../logos/feedback__next.png') center center no-repeat;
+    border-radius: 50%;
+    rotate: 180deg;
+    cursor: pointer;
+}
+
+.feedback__main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0 40px 0;
+}
+
+.feedback__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__box {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feedback__box:nth-child(4) {
+    display: flex;
+    justify-content: end;
+}
+
+.feedback__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 80%;
+    margin: 0 0 10px 10px;
+}
+
+.feedback__contact,
+textarea {
+    width: 650px;
+    height: 48px;
+    font-size: 16px;
+    padding-left: 15px;
+    letter-spacing: 0.7px;
+    outline: none;
+
+    background: #ffffff80;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 6px -6px #555555;
+}
+
+.feedback__right textarea {
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    height: 90px;
+}
+
+.feedback__button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feedback__button a {
+    padding: 15px 50px;
+    border-radius: 12px;    
+    font-size: 20px;
+    background-color: #f3f6f9;
+}
+
+.feedback__button a:hover {
+    background-color: #142251;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.3s;
+}
