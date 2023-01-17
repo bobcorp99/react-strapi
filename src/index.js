@@ -17,6 +17,7 @@ root.render(
     <Head />
     <Her />
     <RouterProvider router={router} />
+
     <Client />
     <Foot />
   </React.StrictMode>

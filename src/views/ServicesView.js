@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { getServices } from '../api'
 import { getProducts } from '../api'
 import { getProjects } from '../api'
-// import { postFeedback } from '../api'
+import { postFeedback } from '../api'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -31,13 +31,13 @@ export default () => {
     })
   }, [])
 
-  // const [feedbacksList, setFeedbacks] = useState([])
+  const [feedbacksList, setFeedbacks] = useState([])
 
-  // useEffect(() => {
-  //   postFeedback().then(data4 => {
-  //     setFeedbacks(data4)
-  //   })
-  // }, [])
+  useEffect(() => {
+    postFeedback().then(data4 => {
+      setFeedbacks(data4)
+    })
+  }, [])
 
   return (
     <div>
@@ -98,7 +98,7 @@ export default () => {
         </div>
       </div>
 
-      {/* <section className='feedback'>
+      <section className='feedback'>
         <div className="container">
           <div className="feedback__title">
             <h3>Обратная связь</h3>
@@ -131,7 +131,7 @@ export default () => {
             }
           </div>
         </div>
-      </section> */}
+      </section>
 
     </div>
   )
