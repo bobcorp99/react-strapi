@@ -3,7 +3,7 @@ import { getServices } from '../api'
 import { getProducts } from '../api'
 import { getProjects } from '../api'
 // import { postFeedback } from '../api'
-
+import { getImages } from '../api'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -12,6 +12,14 @@ export default () => {
   useEffect(() => {
     getServices().then(data1 => {
       setServices(data1)
+    })
+  }, [])
+
+  const [imageList, setImages] = useState([])
+
+  useEffect(() => {
+    getImages().then(data => {
+      setImages(data)
     })
   }, [])
 
@@ -31,7 +39,7 @@ export default () => {
     })
   }, [])
 
-  const [feedbacksList, setFeedbacks] = useState([])
+  // const [feedbacksList, setFeedbacks] = useState([])
 
   // useEffect(() => {
   //   postFeedback().then(data4 => {
@@ -50,7 +58,7 @@ export default () => {
               // imageList.map(image => (
               <div className='service__main'>
                 <h4 className='service__main-title'>{service.attributes.title}</h4>
-                {/* <img src={image.formats.thumbnail.url} alt="" /> */}
+                {/* <img src={image.small.url} alt="photo" /> */}
                 <div className='service__main-descr'>{service.attributes.miniDescr}</div>
                 <a className='service__main-link' href={`/detailed/${service.id}`}>Подробнее &rarr;</a>
               </div>

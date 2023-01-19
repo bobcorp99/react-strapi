@@ -19,7 +19,7 @@ export default () => {
   //   id: null,
   //   attributes: {}
   // })
-
+  
   const back = () => {
     window.history.back()
   }

@@ -54,11 +54,18 @@ textarea {
     padding-left: 15px;
     letter-spacing: 0.7px;
     outline: none;
-
+    color: #000000;
     background: #ffffff80;
     border: none;
     border-radius: 8px;
     box-shadow: 0 5px 6px -6px #555555;
+}
+
+::placeholder{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .feedback__right textarea {
@@ -70,7 +77,9 @@ textarea {
 
 .feedback__button {
     margin-top: 20px;
+    font-weight: 500;
     text-align: center;
+    cursor: pointer;
 }
 
 .feedback__button a {

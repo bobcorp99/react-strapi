@@ -27,6 +27,14 @@ export function getImages() {
   })
 }
 
+export function getImage(imageId) {
+  return new Promise((resolve, reject) =>{
+    http.get(`upload/files/${imageId}`).then(responce => {
+      resolve(responce.data.data)
+    }).catch(error => reject(error))
+  })
+}
+
 export function getService(serviceId) {
   return new Promise((resolve, reject) => {
     http.get(`aritcles/${serviceId}`).then(response => {
@@ -75,7 +83,6 @@ export function getProjects() {
       }
     }).then(responce => {
       resolve(responce.data.data)
-      console.log(responce.data.data);
     }).catch(error => reject(error))
   })
 }
