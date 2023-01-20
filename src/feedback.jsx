@@ -1,23 +1,21 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import axios from 'axios'
 const http = axios.create({
-  baseURL: 'http://localhost:1337/api/upload/files/'
+    baseURL: 'http://localhost:1337/api/upload/files/'
 });
 
 const Feedback = () => {
+    const inputRef = useRef();
 
-    const [data, setData] = useState({
-        name: '',
-        email: '',
-        tel: '',
-        text: '',
-    })
+    const [updated, setData] = useState([
+        // name: '',
+        // email: '',
+        // tel: '',
+        // text: '',
+    ])
 
-    function handle(e) {
-        const newData={...data}
-        newData[e.target.id] = e.target.value
-        setData(newData)
-        console.log(newData);
+    const handleClick = () => {
+        setData(inputRef.current.value)
     }
 
     return (
@@ -32,21 +30,40 @@ const Feedback = () => {
                     <form className="feedback__right">
                         <div className="feedback__box">
                             <p className="feedback__text">Ф.И.О</p>
-                            <input type='text' className="feedback__contact" placeholder='Фамилия Имя Отчество' onChange={(e) => handle(e)} id='name' value={data.name}></input>
+                            <input
+                                type="text"
+                                id="name"
+                                ref={inputRef}
+                                className="feedback__contact"
+                                placeholder='Фамилия Имя Отчество'
+                                />
                         </div>
                         <div className="feedback__box">
                             <p className="feedback__text"></p>
-                            <input className="feedback__contact" placeholder='example@gmail.com' type='email' onChange={(e) => handle(e)} id='email' value={data.email}></input>
+                            <input
+                                type="email"
+                                id="email"
+                                className="feedback__contact"
+                                placeholder="example@mail.com"
+                                ref={inputRef}                                
+                                />
                         </div>
                         <div className="feedback__box">
                             <p className="feedback__text"></p>
-                            <input className="feedback__contact" placeholder='+99898 765-43-21' type='tel' onChange={(e) => handle(e)} id='tel' value={data.tel}></input>
+                            <input
+                                type="tel"
+                                id="tel"
+                                className="feedback__contact"
+                                placeholder="+99898 765 43 21"  
+                                ref={inputRef}                              
+                                />
                         </div>
                         <div className="feedback__box">
-                            <textarea name="contact" placeholder='Письмо' cols="30" rows="10" onChange={(e) => handle(e)} id='text' value={data.text}></textarea>
+                            <textarea name="contact" placeholder='Письмо' cols="30" rows="10" id='text'></textarea>
                         </div>
-                        <div className="feedback__button" onClick={console.log('click')}>
+                        <div className="feedback__button" onClick={handleClick}>
                             <a>Отправить</a>
+                                {console.log(updated)}
                         </div>
                     </form>
 
@@ -56,12 +73,12 @@ const Feedback = () => {
     )
 }
 
-function Feed() {
-    return (
-        <div className="Feed">
-            <Feedback />
-        </div>
-    )
-}
+// function Feed() {
+//     return (
+//         <div className="Feed">
+//             <Feedback />
+//         </div>
+//     )
+// }
 
-export default Feed;
+export default Feedback;
