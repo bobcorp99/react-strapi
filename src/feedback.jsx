@@ -36,7 +36,7 @@ const Feedback = () => {
                                 ref={inputRef}
                                 className="feedback__contact"
                                 placeholder='Фамилия Имя Отчество'
-                                />
+                            />
                         </div>
                         <div className="feedback__box">
                             <p className="feedback__text"></p>
@@ -45,8 +45,8 @@ const Feedback = () => {
                                 id="email"
                                 className="feedback__contact"
                                 placeholder="example@mail.com"
-                                ref={inputRef}                                
-                                />
+                                ref={inputRef}
+                            />
                         </div>
                         <div className="feedback__box">
                             <p className="feedback__text"></p>
@@ -54,16 +54,16 @@ const Feedback = () => {
                                 type="tel"
                                 id="tel"
                                 className="feedback__contact"
-                                placeholder="+99898 765 43 21"  
-                                ref={inputRef}                              
-                                />
+                                placeholder="+99898 765 43 21"
+                                ref={inputRef}
+                            />
                         </div>
                         <div className="feedback__box">
                             <textarea name="contact" placeholder='Письмо' cols="30" rows="10" id='text'></textarea>
                         </div>
                         <div className="feedback__button" onClick={handleClick}>
                             <a>Отправить</a>
-                                {console.log(updated)}
+                            {console.log(updated)}
                         </div>
                     </form>
 
