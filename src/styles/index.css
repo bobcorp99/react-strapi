@@ -237,23 +237,23 @@ h3 {
   /* text-align: center; */
 }
 
-.service__main-link,
+/* .service__main-link,
 .product__main-link {
   font-weight: bold;
   margin: 20px 0px;
-}
+} */
 
-.service__main-link:hover {
+/* .service__main-link:hover {
   text-decoration: underline;
-}
+} */
 
 .service__main:hover .service__main {
   outline: 1px solid #142251;
 }
 
-.product__main-link:hover {
+/* .product__main-link:hover {
   text-decoration: underline;
-}
+} */
 
 /* HERO ------------------------------------------------------------- */
 
@@ -324,3 +324,17 @@ i {
 }
 
 /* HERO END ------------------------------------------------------------- */
+
+.feedback__button {
+  padding: 15px 50px;
+  border-radius: 12px;    
+  font-size: 20px;
+  background-color: #f3f6f9;
+}
+
+.feedback__button:hover {
+  background-color: #142251;
+  color: #fff;
+  font-weight: 700;
+  transition: 0.3s;
+}

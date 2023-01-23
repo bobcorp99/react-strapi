@@ -16,7 +16,7 @@ export default () => {
   }, [])
 
   // const [imageList, setImages] = useState([])
-  
+
   // useEffect(() => {
   //   getImages().then(data => {
   //     setImages(data)
@@ -60,7 +60,7 @@ export default () => {
                 <h4 className='service__main-title'>{service.attributes.title}</h4>
                 {/* <img src={image.small.url} alt="photo" /> */}
                 <div className='service__main-descr'>{service.attributes.miniDescr}</div>
-                <a className='service__main-link' href={`/detailed/${service.id}`}>Подробнее &rarr;</a>
+                <a className='service__main-link feedback__button' href={`/detailed/${service.id}`}>Подробнее</a>
               </div>
             ))
 
@@ -76,7 +76,7 @@ export default () => {
               <div className='product__main'>
                 <h4 className='product__main-title'>{product.attributes.title}</h4>
                 <div className='product__main-descr'>{product.attributes.miniDescr}</div>
-                <a className='product__main-link' href={`/detailed/${product.id}`}>Подробнее &rarr;</a>
+                <a className='product__main-link feedback__button' href={`/detailed/${product.id}`}>Подробнее</a>
               </div>
             ))
           }
