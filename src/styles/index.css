@@ -63,8 +63,7 @@ body {
   height: 52px;
 }
 
-.menu__list,
-ul {
+.menu__list {
   list-style: none;
   display: flex;
   align-items: center;
@@ -219,7 +218,16 @@ h3 {
 
 .service__main-text,
 .product__main-text {
-  font-size: 16px;
+  font-size: 16px;  
+}
+
+.service__main-text ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.service__main-text ul {
+  text-align: left;
 }
 
 .service__main-descr,

@@ -15,13 +15,13 @@ export default () => {
     })
   }, [])
 
-  const [imageList, setImages] = useState([])
-
-  useEffect(() => {
-    getImages().then(data => {
-      setImages(data)
-    })
-  }, [])
+  // const [imageList, setImages] = useState([])
+  
+  // useEffect(() => {
+  //   getImages().then(data => {
+  //     setImages(data)
+  //   })
+  // }, [])
 
   const [productsList, setProducts] = useState([])
 

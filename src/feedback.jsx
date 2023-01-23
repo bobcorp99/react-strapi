@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useRef, useState } from "react";
 import axios from 'axios'
 const http = axios.create({
@@ -12,7 +13,7 @@ const Feedback = () => {
         // email: '',
         // tel: '',
         // text: '',
-    ])
+    ])    
 
     const handleClick = () => {
         setData(inputRef.current.value)
