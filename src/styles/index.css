@@ -188,6 +188,11 @@ h3 {
   padding: 40px;
 }
 
+.back__button {
+  display: inline-block;
+  text-align: center;
+}
+
 .service,
 .product {
   display: flex;
@@ -197,13 +202,16 @@ h3 {
 
 .service__main,
 .product__mian {
-  margin: 0 5px 5px;
   text-align: center;
   background: #ffffff;
   border-radius: 30px;
   background: #f3f6f9;
   border-radius: 50px 50px;
   padding: 5px 5px 35px 5px;
+}
+
+.service__main:hover{
+  outline: 1px solid #142251;
 }
 
 .service__main img {
@@ -233,30 +241,14 @@ h3 {
 .service__main-descr,
 .product__main-descr {
   width: 275px;
-  margin: 0 auto 20px;
-  /* text-align: center; */
+  margin: 0 auto 30px;
 }
 
-/* .service__main-link,
-.product__main-link {
-  font-weight: bold;
-  margin: 20px 0px;
-} */
-
-/* .service__main-link:hover {
-  text-decoration: underline;
-} */
-
-.service__main:hover .service__main {
-  outline: 1px solid #142251;
+.service__main-link {
+  /*  */
 }
-
-/* .product__main-link:hover {
-  text-decoration: underline;
-} */
 
 /* HERO ------------------------------------------------------------- */
-
 
 .hero {
   height: 100vh;
@@ -334,7 +326,7 @@ i {
 
 .feedback__button:hover {
   background-color: #142251;
-  color: #fff;
+  color: #f3f6f9;
   font-weight: 700;
   transition: 0.3s;
 }

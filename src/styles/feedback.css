@@ -59,13 +59,17 @@ textarea {
     border: none;
     border-radius: 8px;
     box-shadow: 0 5px 6px -6px #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 ::placeholder{
+    font-size: 18px;
     color: black;
     font-size: 18px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 .feedback__right textarea {
@@ -76,22 +80,21 @@ textarea {
 }
 
 .feedback__button {
-    margin-top: 20px;
+    padding: 15px 50px;
+    margin: 20px 0;
     font-weight: 500;
     text-align: center;
     cursor: pointer;
-}
-
-.feedback__button a {
-    padding: 15px 50px;
     border-radius: 12px;    
     font-size: 20px;
-    background-color: #f3f6f9;
 }
 
-.feedback__button a:hover {
+.feedback__button:hover {
     background-color: #142251;
-    color: #fff;
     font-weight: 700;
     transition: 0.3s;
+}
+
+.feedback__button:hover a{
+    color: #f3f6f9;
 }

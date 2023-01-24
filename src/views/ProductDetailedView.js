@@ -32,7 +32,7 @@ export default () => {
         </p>
         {/* // eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <div className='product__main-link'>
-          <a href="#" onClick={back}>&larr; Back</a>
+          <a href="#" onClick={back}>Назад</a>
         </div>
       </div>
     </>

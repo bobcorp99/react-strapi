@@ -44,8 +44,8 @@ export default () => {
           <ReactMarkdown children={serviceDetail.attributes.description} />
         </p>
         {/* // eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <div className='service__main-link'>
-          <a href="#" onClick={back}>&larr; Back</a>
+        <div className='feedback__button back__button' onClick={back}>
+          <a href="#" >Назад</a>
         </div>
 
         {/* <h4 className='product__main-title'>{productDetail.attributes.title}</h4>

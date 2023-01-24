@@ -96,7 +96,7 @@ export default () => {
                     {project.attributes.miniDescr}
                     <span> {project.attributes.title}</span>
                   </div>
-                  <div className="feedback__button projects__span">
+                  <div className="projects__span">
                     <a href={`/detailed/${project.id}`}>Подробнее{/* &rarr; */}</a>
                   </div>
                 </div>

@@ -60,10 +60,10 @@ const Feedback = () => {
                             />
                         </div>
                         <div className="feedback__box">
-                            <textarea name="contact" placeholder='Письмо' cols="30" rows="10" id='text'></textarea>
+                            <textarea name="contact" placeholder='Письмо' cols="30" rows="10" id='text'/>
                         </div>
-                        <div className="feedback__button" onClick={handleClick}>
-                            <a>Отправить</a>
+                        <div className="feedback__button back__button" onClick={handleClick}>
+                            <a >Отправить</a>
                             {console.log(updated)}
                         </div>
                     </form>
