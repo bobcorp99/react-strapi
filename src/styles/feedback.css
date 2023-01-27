@@ -76,7 +76,7 @@ textarea {
     resize: none;
     font-family: 'Montserrat', sans-serif;
     outline: none;
-    height: 90px;
+    height: 120px;
 }
 
 .feedback__button {
@@ -97,4 +97,8 @@ textarea {
 
 .feedback__button:hover a{
     color: #f3f6f9;
+}
+
+@media screen {
+    
 }

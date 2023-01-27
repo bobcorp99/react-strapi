@@ -148,6 +148,7 @@ body {
 
 .footer__link {
   padding: 15px 0;
+  list-style-type: none;
 }
 
 .footer__link {
@@ -220,6 +221,7 @@ h3 {
 
 .service__main-title,
 .product__main-title {
+  font-size: 20px;
   padding: 30px 0;
   letter-spacing: 0.03em;
 }
@@ -242,10 +244,6 @@ h3 {
 .product__main-descr {
   width: 275px;
   margin: 0 auto 30px;
-}
-
-.service__main-link {
-  /*  */
 }
 
 /* HERO ------------------------------------------------------------- */
@@ -330,3 +328,31 @@ i {
   font-weight: 700;
   transition: 0.3s;
 }
+
+@media only screen and (max-width: 1250px) {
+  .menu__link {
+    font-size: 15px;
+    letter-spacing: 0.35px;
+    gap: 27px;
+  }
+
+  .hero__main-title {
+    font-size: 94px;
+    line-height: 100%;
+    
+  }
+  .hero__main-span {
+    line-height: 87px;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  
+}
+
+@media only screen and (max-width: 768px){
+  p {
+    font-size: 14px;
+  }
+}
+

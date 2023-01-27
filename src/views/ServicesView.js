@@ -56,9 +56,9 @@ export default () => {
           {
             servicesList.map(service => (
               // imageList.map(image => (
-              <div className='service__main'>
+              <div className='service__main' onClick='location.href=(`/detailed/${service.id}`)'>
                 <h4 className='service__main-title'>{service.attributes.title}</h4>
-                {/* <img src={image.small.url} alt="photo" /> */}
+                <img className='service__main-img' src='http://localhost:1337/uploads/operation_abb4d5aace.png' alt="photo"/>
                 <div className='service__main-descr'>{service.attributes.miniDescr}</div>
                 <a className='service__main-link feedback__button' href={`/detailed/${service.id}`}>Подробнее</a>
               </div>
@@ -105,7 +105,6 @@ export default () => {
           </div>
         </div>
       </div>
-
       {/* <section className='feedback'>
         <div className="container">
           <div className="feedback__title">
@@ -140,7 +139,6 @@ export default () => {
           </div>
         </div>
       </section> */}
-
     </div>
   )
 }
