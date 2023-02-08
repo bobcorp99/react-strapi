@@ -2,6 +2,7 @@
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './styles/index.css'
 import logo from './logos/png__logo.png'
+import menu from './logos/menu.png'
 
 const Header = () => {
   return (
@@ -17,6 +18,9 @@ const Header = () => {
             <li className='menu__item'><a href="" className='menu__link'>Клиенты</a></li>
             <li className='menu__item'><a href="" className='menu__link'>Контакты</a></li>
           </ul>
+          <button className='menu__nav-button'>
+            <img src={menu} alt="logo" />
+          </button>
         </nav>
       </div>
     </section>

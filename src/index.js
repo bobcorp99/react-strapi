@@ -18,8 +18,8 @@ root.render(
     <Head />
     <Her />
     <RouterProvider router={router} />
-    <Feed />
     <Client />
+    <Feed />
     <Foot />
   </React.StrictMode>
 

@@ -1,4 +1,5 @@
 import './styles/clients.css'
+import './styles/index.css';
 // import { getImages } from '../api'
 import hilton from './logos/Hilton.png'
 import petro from './logos/PetroChina.png'
@@ -24,49 +25,49 @@ const Clients = () => {
                 <div className="slider">
                     <div className="slide-track">
                         <div className="slide">
-                            <img src={hilton} height="100px" width="100px" alt="" />
+                            <img src={hilton} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={fac} height="100px" width="100px" alt="" />
+                            <img src={fac} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={kz} height="100px" width="100px" alt="" />
+                            <img src={kz} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={luk} height="100px" width="100px" alt="" />
+                            <img src={luk} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={petro} height="100px" width="100px" alt="" />
+                            <img src={petro} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={xtv} height="100px" width="100px" alt="" />
+                            <img src={xtv} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={qai} height="100px" width="100px" alt="" />
+                            <img src={qai} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={ham} height="100px" width="100px" alt="" />
+                            <img src={ham} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={sber} height="100px" width="100px" alt="" />
+                            <img src={sber} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={kar} height="100px" width="100px" alt="" />
+                            <img src={kar} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={air} height="100px" width="100px" alt="" />
+                            <img src={air} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={euro} height="100px" width="100px" alt="" />
+                            <img src={euro} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={iiv} height="100px" width="100px" alt="" />
+                            <img src={iiv} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={ipak} height="100px" width="100px" alt="" />
+                            <img src={ipak} height="120px" width="120px" alt="" />
                         </div>
                         <div className="slide">
-                            <img src={kcell} height="100px" width="100px" alt="" />
+                            <img src={kcell} height="120px" width="120px" alt="" />
                         </div>
                     </div>
                 </div>

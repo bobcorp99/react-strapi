@@ -5,7 +5,7 @@ const http = axios.create({
 
 export function getServices() {
   return new Promise((resolve, reject) => {
-    http.get('aritcles', {
+    http.get('articles', {
       params: {
         fields: ['title', 'miniDescr']
       }
@@ -15,11 +15,21 @@ export function getServices() {
   })
 }
 
-export function getImages() {
+export function getService(serviceId) {
   return new Promise((resolve, reject) => {
-    http.get('upload/files/', {
+    http.get(`articles/${serviceId}`).then(response => {
+      resolve(response.data.data)
+    }).catch(error => reject(error))
+  })
+}
+
+//Img ------------------------------------------------------------>
+
+export function getImages(imagesId) {
+  return new Promise((resolve, reject) => {
+    http.get(`upload/files/${imagesId}`, {
       params: {
-        fields: ['id', 'url']
+        fields: ['url']
       }
     }).then(responce => {
       resolve(responce.data.daata)
@@ -27,21 +37,13 @@ export function getImages() {
   })
 }
 
-export function getImage(imageId) {
-  return new Promise((resolve, reject) =>{
-    http.get(`upload/files/${imageId}`).then(responce => {
-      resolve(responce.data.data)
-    }).catch(error => reject(error))
-  })
-}
-
-export function getService(serviceId) {
-  return new Promise((resolve, reject) => {
-    http.get(`aritcles/${serviceId}`).then(response => {
-      resolve(response.data.data)
-    }).catch(error => reject(error))
-  })
-}
+// export function getImage(imageId) {
+//   return new Promise((resolve, reject) =>{
+//     http.get(`upload/files/${imageId}`).then(responce => {
+//       resolve(responce.data.data)
+//     }).catch(error => reject(error))
+//   })
+// }
 
 //Feedbacks ------------------------------------------------->
 

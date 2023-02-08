@@ -84,6 +84,11 @@ body {
   transition: 0.3s;
 }
 
+.menu__nav-button {
+  display: none;
+  border: none;
+}
+
 /* HEADER END------------------------------------------------------- */
 /* FOOTER ---------------------------------------------------------- */
 .footer__main {
@@ -203,15 +208,15 @@ h3 {
 
 .service__main,
 .product__mian {
+  display: inline;
   text-align: center;
-  background: #ffffff;
-  border-radius: 30px;
   background: #f3f6f9;
   border-radius: 50px 50px;
   padding: 5px 5px 35px 5px;
+  margin: 8px;
 }
 
-.service__main:hover{
+.service__main:hover {
   outline: 1px solid #142251;
 }
 
@@ -228,10 +233,10 @@ h3 {
 
 .service__main-text,
 .product__main-text {
-  font-size: 16px;  
+  font-size: 16px;
 }
 
-.service__main-text ul{
+.service__main-text ul {
   display: flex;
   flex-direction: column;
 }
@@ -317,7 +322,7 @@ i {
 
 .feedback__button {
   padding: 15px 50px;
-  border-radius: 12px;    
+  border-radius: 12px;
   font-size: 20px;
   background-color: #f3f6f9;
 }
@@ -330,6 +335,14 @@ i {
 }
 
 @media only screen and (max-width: 1250px) {
+  .container {
+    max-width: 1250px;
+  }
+
+  .Header .container {
+    justify-content: space-between;
+  }
+
   .menu__link {
     font-size: 15px;
     letter-spacing: 0.35px;
@@ -339,20 +352,84 @@ i {
   .hero__main-title {
     font-size: 94px;
     line-height: 100%;
-    
   }
+
+  .hero__main-miniTitle {
+    font-size: 15px;
+  }
+
   .hero__main-span {
     line-height: 87px;
   }
+
+  .hero__page img {
+    width: 480px;
+  }
+
+  .service,
+  .product {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+
+  .service__main-descr {
+    width: 375px;
+  }
 }
 
-@media only screen and (max-width: 1024px){
-  
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 994px;
+  }
+
+  .hero__page {
+    display: none;
+  }
+
+  .hero__main {
+    text-align: center;
+  }
+
+  .hero__main-title {
+    font-size: 78px;
+  }
+
+  .menu__list {
+    display: none;
+  }
+
+  .menu__nav-button {
+    display: block;
+  }
+
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 915px) {
+
+  .container,
+  .slider {
+    max-width: 882px;
+  }
+
+  .footer__main {
+    flex-direction: column;
+    align-items: center
+  }
+
+  .footer__right {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .container,
+  .slider {
+    max-width: 738px;
+  }
+
   p {
     font-size: 14px;
   }
 }
-

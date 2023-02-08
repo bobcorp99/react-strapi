@@ -1,3 +1,4 @@
+/* eslint-disable no-template-curly-in-string */
 import React, { useState, useEffect } from 'react'
 import { getServices } from '../api'
 import { getProducts } from '../api'
@@ -15,13 +16,13 @@ export default () => {
     })
   }, [])
 
-  // const [imageList, setImages] = useState([])
+  const [imageList, setImages] = useState([])
 
-  // useEffect(() => {
-  //   getImages().then(data => {
-  //     setImages(data)
-  //   })
-  // }, [])
+  useEffect(() => {
+    getImages().then(data => {
+      setImages(data)
+    })
+  }, [])
 
   const [productsList, setProducts] = useState([])
 
@@ -55,17 +56,17 @@ export default () => {
         <div className='service'>
           {
             servicesList.map(service => (
-              // imageList.map(image => (
-              <div className='service__main' onClick='location.href=(`/detailed/${service.id}`)'>
+              
+              // {  imageList.map(images => (
+              <div className='service__main'>
                 <h4 className='service__main-title'>{service.attributes.title}</h4>
-                <img className='service__main-img' src='http://localhost:1337/uploads/operation_abb4d5aace.png' alt="photo"/>
+                <img className='service__main-img' src='' alt="photo" />
                 <div className='service__main-descr'>{service.attributes.miniDescr}</div>
                 <a className='service__main-link feedback__button' href={`/detailed/${service.id}`}>Подробнее</a>
               </div>
             ))
-
-            // ))
           }
+            {/* ))} */}
         </div>
 
         <h3>Продукты</h3>

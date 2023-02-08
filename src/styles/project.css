@@ -4,9 +4,6 @@
     background-repeat: no-repeat;
     background-position: right bottom;
     background-attachment: scroll;
-}
-
-.container__projects {
     padding-bottom: 30px;
 }
 
@@ -20,7 +17,7 @@
 .projects__content {
     display: flex;
     flex-direction: column;
-    width: 395px;
+    max-width: 395px;
     height: 195px;
     background: #ffffff;
     border-radius: 30px;
@@ -49,4 +46,16 @@
 .projects__span:hover {
     font-size: 17px;
     font-weight: 600;
+}
+
+
+
+@media only screen and (max-width: 1250px) {
+    .projects__main {
+        justify-content: space-around;
+    }
+
+    .projects__content {
+        max-width: 425px;
+    }
 }

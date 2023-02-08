@@ -13,7 +13,7 @@ const Feedback = () => {
         // email: '',
         // tel: '',
         // text: '',
-    ])    
+    ])
 
     const handleClick = () => {
         setData(inputRef.current.value)
@@ -60,7 +60,7 @@ const Feedback = () => {
                             />
                         </div>
                         <div className="feedback__box">
-                            <textarea name="contact" placeholder='Письмо' cols="30" rows='20' id='text'/>
+                            <textarea name="contact" placeholder='Письмо' cols="30" rows='20' id='text' />
                         </div>
                         <div className="feedback__button back__button" onClick={handleClick}>
                             <a >Отправить</a>
